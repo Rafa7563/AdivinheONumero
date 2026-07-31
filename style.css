@@ -1,0 +1,89 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f0f4f8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.container {
+  background: white;
+  border-radius: 12px;
+  padding: 32px;
+  width: 100%;
+  max-width: 420px;
+  text-align: center;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  color: #2563eb;
+  margin-bottom: 8px;
+  font-size: 1.8rem;
+}
+
+.subtitulo {
+  color: #888;
+  font-size: 0.9rem;
+  margin-bottom: 24px;
+}
+
+.input-area {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+input[type="number"] {
+  flex: 1;
+  padding: 10px 14px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+input[type="number"]:focus { border-color: #2563eb; }
+
+button {
+  padding: 10px 18px;
+  background: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background 0.3s;
+}
+
+button:hover { background: #1d4ed8; }
+
+.mensagem {
+  font-size: 1.1rem;
+  font-weight: bold;
+  min-height: 28px;
+  margin-bottom: 12px;
+  color: #333;
+}
+
+/* Cores de feedback (o JS troca a classe) */
+.mensagem.alto   { color: #ef4444; }
+.mensagem.baixo  { color: #f59e0b; }
+.mensagem.acerto { color: #22c55e; }
+
+.tentativas {
+  color: #888;
+  font-size: 0.9rem;
+  margin-bottom: 20px;
+}
+
+#btn-novo {
+  background: #64748b;
+}
+
+#btn-novo:hover { background: #475569; }
